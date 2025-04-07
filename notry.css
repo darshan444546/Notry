@@ -1,105 +1,603 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-#notry_header {
-
+#notry_head {
     background-color: #fee2b3;
-    text-align: center;
+
 }
 
-#header_section {
+#notry_head_sub {
     display: flex;
-    margin-left: 390px;
+
+    margin-left: 400PX;
 }
 
-#dropdown_button_and_icon {
+#notry_head_sub h1 {
+    margin-top: 12PX;
+}
+
+#notry_head_ul {
+    margin-top: 25PX;
+    margin-left: 500PX;
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    color: rgb(97, 97, 97);
+
+}
+
+#notry_head_ul li:hover {
+    color: black;
+    transition: 0.2s;
+}
+
+
+#down-arrow {
+    margin-top: 4px;
+    margin-left: 5px;
+    width: 13%;
+    height: 17px;
+}
+
+#practice_area_and_icon {
     display: flex;
     position: relative;
-    cursor: pointer;
-    padding-bottom: 10px;
+
 }
 
-#dropdown {
+#practice_area_and_icon_ul {
+    width: 200px;
+    list-style-type: none;
     display: none;
-    position: absolute;
-    top: 70px;
-    width: 9%;
-    list-style-type: none;
+    height: 253px;
     background-color: white;
-    text-align: center;
-    margin: 0;
-
+    text-align: left;
+    position: absolute;
+    /* Position relative to parent */
+    top: 100%;
+    /* Position dropdown below parent */
+    left: 0;
+    z-index: 1000;
 }
 
-#dropdown:hover {
+
+#practice_area_and_icon:hover #practice_area_and_icon_ul {
     display: block;
 }
 
-#dropdown_button_and_icon:hover+#dropdown,
-#dropdown_button_and_icon:hover~#dropdown {
-    display: block;
-}
-
-
-#dropdown li {
+#practice_area_and_icon_ul li {
+    margin-left: -32px;
     text-align: center;
-    width: 123%;
-    transition: 0.1s;
-    margin-right: 00px;
-    margin-left: -41px;
-    cursor: pointer;
-
-
+    width: inherit;
+    transition: 0.3s;
+    margin-top: 15px;
 }
 
-#dropdown li:hover {
-    background-color: grey;
-    color: white;
+#practice_area_and_icon_ul li:hover {
+    background-color: rgb(226, 226, 226);
+    transition: 0.3s;
 }
 
-#dropdown_icon {
-    margin-top: 21px;
-    margin-left: 10px;
-    width: 10%;
-    height: 18px;
 
-
-
+.offcanvas {
+    position: fixed !important;
+    /* Ensures it does not take up space */
+    top: 0;
+    left: 0;
+    width: 250px;
+    /* Set width to match your design */
+    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    visibility: hidden;
+    /* Hide it when not active */
 }
 
-#header_section_ul {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    margin-left: 500px;
+.offcanvas.show {
+    visibility: visible;
+    /* Bootstrap adds 'show' when opened */
 }
 
-/*-------------------------------------------------------------------------header section---------------------------------------------------------------------------*/
-#notry_table_image {
+#menus_bar {
+    display: none;
+}
+
+#notry_table {
     width: 100%;
-
-    height: auto;
+    height: 900px;
+    position: relative;
 }
 
-.form-group {
-    display: block;
+#notry_table_text_and_form {
+    display: flex;
+    width: 100%;
+    bottom: 200px;
+    left: 330px;
+    color: white;
+    position: absolute;
+}
+
+#notry_table_text {
+    padding-top: 100px;
+
+}
+
+#notry_table_text h1 {
+    font-size: 60Px;
+}
+
+#notry_table_form {
+    width: 26%;
+    padding-top: 30px;
+    padding-left: 45px;
+    height: 400px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
+#notry_table_form input {
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
 }
 
 #Book_Appointment {
-    width: 30%;
-    height: 300px;
-    border: 1px solid black;
+    background-color: #fee2b3;
+    border: none;
 }
 
-.Appointment_fields {
-    width: 50%;
-    margin-top: 6px;
+#Book_Appointment:hover {
+    background-color: #ffcb72;
+    transition: 0.5s;
+}
+
+#Practice_Areas {
+    background-color: #f8f9fa;
+    text-align: center;
+    height: 800px;
+}
+
+#Practice_Areas h1 {
+    margin-top: 100px;
+}
+
+.laws_ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.laws_ul li {
+    width: 20%;
+    height: 250px;
+    background-color: white;
     border: 1px solid black;
-    border-radius: 5px;
-    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 50px;
+    text-align: left;
+    box-shadow: 0px 5px 5px grey;
+}
+
+.laws_icons {
+    width: 15%;
+}
+
+#Practice_Areas_laws {
+    position: relative;
+    left: 350px;
+}
+
+.Reliable_and_Effective_images {
+    width: 80%;
+    height: 500px;
+}
+
+#Reliable_and_Effective {
+    display: flex;
+    gap: 150px;
+    height: 680px;
+    padding-left: 310px;
+    padding-top: 85px;
+}
+
+#Reliable_and_Effective_sub_div {
+    display: flex;
+    gap: 35px;
+}
+
+#Reliable_and_Effective_text {
+    width: 25%;
+    margin-top: 60px;
+}
+
+#Book_an_appointment {
+    background-color: #fee2b3;
     height: 50px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#Book_an_appointment:hover {
+    background-color: #ffcb72;
+    transition: 0.5s;
+}
+
+.customers {
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 5px 10px rgb(194, 193, 193);
+    width: 18%;
+    height: 250px;
+    text-align: left;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+
+#Happy_Customers {
+    background-color: #f8f9fa;
+    text-align: center;
+    height: 500px;
+    padding-top: 75px;
+}
+
+#Happy_Customers_sub_div {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    left: 400px;
+    top: 35px;
+}
+
+.customers_images {
+    border-radius: 50%;
+    width: 16%;
+    height: 16%;
+}
+
+.customers_ul {
+    display: block;
+    list-style-type: none;
+    gap: 0px;
+}
+
+.customers_ul li {
+    display: flex;
+    gap: 10px;
+}
+
+.Legal_Solutions_images {
+    width: 5%;
+}
+
+#Legal_Solutions {
+    position: relative;
+    left: 250px;
+    top: 100px;
+    height: 700px;
+}
+
+#Legal_Solutions ul {
+    list-style-type: none;
+    display: flex;
+    gap: -10px;
+}
+
+#Legal_Solutions_table td {
+    padding: 0;
+    /* reset padding */
+    margin: 0;
+    /* reset margin */
+    vertical-align: middle;
+}
+
+.Legal_Solutions_div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* adjust spacing as needed */
+    margin-bottom: 10px;
+    /* optional for spacing between rows */
+}
+
+.Legal_Solutions_images {
+    width: 20px;
+    /* or your preferred size */
+    height: auto;
+    display: block;
+}
+
+#firt_img_of_of_Legal_Solutions {
+    width: 80%;
+    margin-left: 75px;
+    height: 500px;
+}
+
+#Legal_Solutions_text {
+    padding-left: 25px;
+}
+
+.ho_to_buttons {
+    text-align: left;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    color: rgb(161, 161, 161);
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.ho_to_buttons:hover {
+    color: black;
+    transition: 0.15s;
+}
+
+#ho_to_buttons_div {
+    padding-left: 50px;
+}
+
+#ho_to_buttons_div p {
+    background-color: #ececec;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+#footer_image {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    filter: brightness(40%);
+    z-index: 1;
+    margin-top: 50px;
+
+}
+
+#footer_position_set {
+    position: absolute;
+    top: 4030px;
+    width: 55%;
+    margin-left: 400px;
+    color: white;
+    z-index: 2;
+}
+
+#footer_section_col_1 {
+    margin-right: 80px;
+}
+
+#footer_section {
+    display: flex;
+    gap: 50px;
+}
+
+.footer_icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+#footer_icons_div {}
+
+#footer_last_line {
+    display: flex;
+    margin-left: 240px;
+}
+
+#heart_image {
+    width: 25px;
+    height: 25px;
+}
+
+.other_footer_section p {
+    color: rgb(156, 156, 156);
+}
+
+.other_footer_section p:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+#footer_last_line span {
+    color: white;
+}
+
+#footer_last_line span:hover {
+    color: rgb(214, 214, 214);
+}
+
+#footer_image,
+#footer_position_set {
+    transition: top 0.3s ease-in-out;
+}
+
+#footer_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #notry_head_ul {
+        display: none;
+    }
+
+    #menus_bar {
+        display: block;
+        position: relative;
+        top: 12px;
+        left: 280px;
+        width: 7%;
+        height: 30px;
+    }
+
+    #notry_head_sub {
+        display: flex;
+
+        margin-left: 10PX;
+    }
+
+    #notry_head_ul_2 {
+        width: 150px;
+        display: block;
+        list-style-type: none;
+        top: 0;
+        left: 0;
+
+    }
+
+    .btn-close {
+        position: relative;
+        right: 30px;
+    }
+
+    #notry_table_text_and_form {
+        display: block;
+        left: 0px;
+        bottom: -150px;
+    }
+
+    #notry_table_form {
+        width: 400px;
+        padding-top: 40px;
+        padding-left: 50px;
+        height: 400px;
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+
+    #notry_table_form input {
+        width: 310px;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .laws_ul {
+        display: block;
+        gap: 10px;
+
+    }
+
+    #Practice_Areas_laws {
+        position: relative;
+        left: 0px;
+    }
+
+    .laws_ul li {
+        width: 90%;
+    }
+
+    #Reliable_and_Effective {
+        display: block;
+        position: relative;
+        top: 850px;
+        right: 310px;
+        gap: 150px;
+        padding-left: 310px;
+        padding-top: 100px;
+    }
+
+    #Reliable_and_Effective_text {
+        width: 390px;
+        margin-top: 60px;
+    }
+
+    #Reliable_and_Effective_sub_div {
+        margin-left: 18px;
+        gap: 10px;
+    }
+
+    .Reliable_and_Effective_images {
+        width: 230px;
+        height: 250px;
+    }
+
+    #Happy_Customers {
+        position: relative;
+        top: 500px;
+        height: 950px;
+    }
+
+    #Happy_Customers_sub_div {
+        display: block;
+        position: relative;
+        left: 22px;
+        top: 35px;
+    }
+
+    .customers {
+        display: flex;
+        background-color: white;
+        box-shadow: 1px 5px 10px rgb(194, 193, 193);
+        width: 90%;
+        height: 250px;
+        text-align: left;
+        padding-right: 20px;
+        padding-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    #firt_img_of_of_Legal_Solutions {
+        width: 100%;
+        margin-left: 0px;
+        height: 500px;
+    }
+
+    #Legal_Solutions ul {
+        list-style-type: none;
+        display: block;
+        gap: -10px;
+    }
+
+    #Legal_Solutions {
+        position: relative;
+        left: -13px;
+        top: 500px;
+        height: 1900px;
+    }
+
+    #ho_to_buttons_div {
+        padding-left: 0px;
+    }
+
+    #footer_section {
+        display: block;
+    }
+
+    #footer_position_set {
+        position: absolute;
+        top: 5435px;
+        width: 100%;
+        margin-left: 0px;
+        color: white;
+    }
+
+    #footer_icons_div {
+        width: 100pc;
+    }
+
+    #footer_section_col_1 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #footer_image {
+        width: 100%;
+        height: 1300px;
+        filter: brightness(40%);
+
+    }
+
+    #footer_last_line {
+        margin-left: 20px;
+        width: 350px;
+        text-align: center;
+    }
 }
